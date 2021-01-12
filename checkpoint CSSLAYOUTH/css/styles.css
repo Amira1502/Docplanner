@@ -1,0 +1,289 @@
+/* initialisation */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* health-intro CSS */
+.health-intro {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 2% 10%;
+}
+
+.health-intro h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+}
+
+.health-intro div {
+  display: flex;
+}
+.health-intro div p {
+  /* width: 45%; */
+  padding: 3%;
+  line-height: 1.75;
+}
+
+/* menu CSS */
+
+body {
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+}
+.main-header.is-sticky {
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.logo {
+  width: 268px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  color: #ababab;
+  text-decoration: none;
+  padding: 20px;
+  list-style: none;
+}
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  padding-top: 20px;
+  position: absolute;
+  min-width: 250px;
+  margin-left: -100px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu .is-current,
+.menu .is-current a {
+  color: #00b39b;
+}
+.menu a {
+  color: #ababab;
+  display: block;
+  text-decoration: none;
+  padding: 0 0.6em;
+}
+
+.menu a:hover {
+  color: #00b39b;
+  cursor: pointer;
+}
+/*service*/
+.service {
+  display: flex;
+  margin: 0% 12%;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+/*patient*/
+.patient {
+  background: #00ccb1;
+  border-radius: 10px;
+  padding: 0px 10px;
+  width: 30%;
+  height: 345px;
+  justify-content: space-between;
+}
+/*doctor*/
+.doctor {
+  background: #3d83df;
+  border-radius: 10px;
+  padding: 0px 10px;
+  width: 30%;
+  height: 345px;
+  justify-content: space-between;
+}
+/*clinique*/
+.clinique {
+  background: #1b2734;
+  border-radius: 10px;
+  padding: 0px 10px;
+  width: 30%;
+  height: 345px;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+h3 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.style-select {
+  position: relative;
+  display: inline-block;
+  background: none;
+  margin: 10% 0%;
+  padding: 0px 35px 0px 15px;
+  font-size: 130%;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+}
+/*brand*/
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 12%;
+  padding: 5% 0;
+}
+h4 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #00b39b;
+}
+.brand-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  font-size: 370%;
+  width: 67%;
+  padding: 5px 0;
+  margin: 0 35px;
+  list-style: none;
+  justify-content: space-between;
+  fill: hsla(0, 0%, 67%, 0.7);
+}
+
+.brand-logo :hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #00b39b;
+  cursor: pointer;
+}
+/*stat*/
+.stat {
+  display: flex;
+  background: #e5faf8;
+  background-image: linear-gradient(
+      -45deg,
+      rgba(0, 204, 177, 0.01) 5%,
+      rgba(61, 199, 223, 0.1)
+    )
+    url(/image/sygnet.png) no-repeat;
+  padding: 80px 25px;
+  margin: 15px 0;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  width: 150px;
+  height: 250px;
+  text-align: center;
+  margin: 0 2%;
+  padding: 15px;
+  font-size: 0;
+  justify-content: space-between;
+}
+/*picture*/
+.picture {
+  display: flex;
+  margin: 3% 10%;
+  padding: 0% -10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item__picture {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  border-radius: 2%;
+  line-height: 5em;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.item__picture :hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+button {
+  display: inline-flex;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+h5 {
+  text-align: left;
+  font-size: 25px;
+}
+.foot {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-top: 1px solid #eef2f2;
+  text-align: center;
+  font-size: 20px;
+  padding: 5% 0;
+}
